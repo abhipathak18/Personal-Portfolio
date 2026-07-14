@@ -3,7 +3,7 @@
 A responsive personal portfolio website built with HTML, CSS, and
 JavaScript — no frameworks, no build step. Open `index.html` and it runs.
 
-**Live demo:** _add your deployed link here (GitHub Pages / Vercel / Netlify)_
+**Live demo:** SOON
 **Repository:** https://github.com/abhipathak18/Personal-Portfolio 
 
 ---
@@ -56,7 +56,7 @@ A team-built tool that transcribes and summarizes meetings automatically.
 - **App:** Flutter / React Native
 
 **Live demo:** https://smart-meeting-analyzer.vercel.app/
-**Source:** _add the GitHub repo link for this project here_
+**Source:** https://github.com/vaibhavprakash55/Smart-Meeting-Analyzer
 
 ## Contact
 
