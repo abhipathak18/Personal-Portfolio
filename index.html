@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhi Pathak — Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Abhi Pathak, a full-stack developer and CSE student at GLA University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-bracket">&lt;</span>Abhi<span class="logo-accent">.Pathak</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="#top" class="tab">~/home</a>
+        <a href="#about" class="tab">~/about</a>
+        <a href="#projects" class="tab">~/projects</a>
+        <a href="#skills" class="tab">~/skills</a>
+        <a href="#contact" class="tab">~/contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode" title="Toggle theme">
+          <span class="theme-icon" id="themeIcon">☾</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">CSE Student · GLA University</p>
+          <h1 class="hero-title">
+            I build software that people actually use.
+          </h1>
+          <p class="hero-sub">
+            Full-stack developer studying Computer Science Engineering at
+            GLA University. I like building things end-to-end — from the
+            backend and models to the app someone actually opens.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" id="hireMeBtn">Hire me</button>
+            <a href="#projects" class="btn btn-ghost">See the work ↓</a>
+          </div>
+        </div>
+
+        <div class="profile-card">
+          <div class="profile-avatar" aria-hidden="true">AP</div>
+          <h2 class="profile-name">Abhi Pathak</h2>
+          <p class="profile-role">Full-Stack Developer</p>
+
+          <ul class="profile-meta">
+            <li><span class="meta-key">Location</span><span>India</span></li>
+            <li><span class="meta-key">Education</span><span>B.Tech CSE, GLA University</span></li>
+            <li><span class="meta-key">Status</span><span class="status-open">Open to opportunities</span></li>
+          </ul>
+
+          <div class="profile-stack">
+            <span>JavaScript</span><span>React</span><span>FastAPI</span><span>Express</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-inner">
+        <div class="section-head">
+          <span class="line-no">01</span>
+          <h2>About me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main">
+            <p>
+              I'm Abhi Pathak, a full-stack developer and Computer Science
+              Engineering student at GLA University. I care about shipping
+              things that actually work end-to-end — a clean backend, a
+              usable interface, and nothing that breaks the moment real
+              users touch it.
+            </p>
+
+            <p id="moreAboutText" class="more-about hidden">
+              Most of what I build sits at the intersection of web
+              development and applied AI — wiring models into real products
+              rather than leaving them in a notebook. I'm comfortable moving
+              across the stack: APIs, databases, mobile front ends, and the
+              ML services that sit behind them.
+            </p>
+
+            <button class="link-btn" id="moreAboutBtn" aria-expanded="false" aria-controls="moreAboutText">
+              Read more about me ↓
+            </button>
+
+            <dl class="about-facts">
+              <div class="fact">
+                <dt>Education</dt>
+                <dd>B.Tech, Computer Science Engineering — GLA University</dd>
+              </div>
+              <div class="fact">
+                <dt>Focus</dt>
+                <dd>Full-stack development, with a growing interest in applied AI</dd>
+              </div>
+              <div class="fact">
+                <dt>Currently</dt>
+                <dd>Looking for internships / full-stack developer roles</dd>
+              </div>
+              <div class="fact">
+                <dt>Interests</dt>
+                <dd>Building AI-powered products, backend systems, mobile apps</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="section-inner">
+        <div class="section-head">
+          <span class="line-no">02</span>
+          <h2>Featured project</h2>
+        </div>
+
+        <div class="project-grid project-grid-single">
+
+          <article class="project-card project-card-featured">
+            <div class="project-thumb project-thumb-lg" data-label="AI Meeting Summarizer"></div>
+            <div class="project-body">
+              <span class="project-kicker">Team project</span>
+              <h3>AI Meeting Summarizer</h3>
+              <p>
+                A team-built tool that transcribes and summarizes meetings
+                automatically. Audio is transcribed with Whisper, speakers
+                are separated with Pyannote.audio for diarization, and the
+                transcript is condensed into a clean summary using
+                GPT&#8209;4o / Gemini — served through a FastAPI backend to a
+                Flutter / React Native app.
+              </p>
+              <ul class="tech-list">
+                <li>Whisper</li><li>Pyannote.audio</li><li>GPT-4o</li><li>Gemini</li>
+                <li>FastAPI</li><li>Flutter</li><li>React Native</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://smart-meeting-analyzer.vercel.app/" class="proj-link">Live demo ↗</a>
+                <a href="#" class="proj-link">Source ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="section-inner">
+        <div class="section-head">
+          <span class="line-no">03</span>
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>HTML &amp; CSS</span><span>90%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-fill="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>JavaScript</span><span>85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-fill="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>Python</span><span>85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-fill="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>FastAPI</span><span>80%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-fill="80"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>React</span><span>75%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-fill="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-label"><span>Git &amp; GitHub</span><span>85%</span></div>
+            <div class="skill-track"><div class="skill-fill" data-fill="85"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-tags">
+          <span>Flutter</span><span>React Native</span><span>MongoDB</span>
+          <span>REST APIs</span><span>Docker</span><span>GPT-4o / Gemini APIs</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="section-inner">
+        <div class="section-head">
+          <span class="line-no">04</span>
+          <h2>Get in touch</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>Have a project, a role, or just a question? The form works,
+               or skip it and reach me directly.</p>
+            <ul class="contact-list">
+              <li><span class="contact-key">Email</span> <a href="mailto:abhipathakorg@gmail.com">Email Me</a></li>
+              <li><span class="contact-key">Phone</span> <a href="tel:+91 9xxxxxxxx9">Click Here</a></li>
+              <li><span class="contact-key">LinkedIn</span> <a href="https://www.linkedin.com/in/abhi-pathak-1281b1389" target="_blank" rel="noopener">Click Here</a></li>
+              <li><span class="contact-key">GitHub</span> <a href="https://github.com/abhipathak18" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrap">
+            <div id="formStatus" class="form-status hidden" role="status"></div>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+              <span class="error-msg" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+              <span class="error-msg" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="What are you building?"></textarea>
+              <span class="error-msg" id="messageError"></span>
+            </div>
+            <button type="button" class="btn btn-primary" id="submitBtn">Send message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Abhi Pathak. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer-links">
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
