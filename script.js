@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Hire Me button (alert) ---------- */
   const hireMeBtn = document.getElementById('hireMeBtn');
   hireMeBtn.addEventListener('click', () => {
-    alert("Thanks for your interest! Reach out at abhi.pathak@example.com and let's talk.");
+    alert("Thanks for your interest! Reach out at abhipathakorg@gmail.com and let's talk.");
   });
 
   /* ---------- Show / Hide "More About Me" ---------- */
