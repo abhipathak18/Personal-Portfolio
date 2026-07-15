@@ -3,7 +3,8 @@
 A responsive personal portfolio website built with HTML, CSS, and
 JavaScript — no frameworks, no build step. Open `index.html` and it runs.
 
-**Live demo:** SOON
+**Live demo:** https://abhipathak18.github.io/Personal-Portfolio/
+
 **Repository:** https://github.com/abhipathak18/Personal-Portfolio 
 
 ---
