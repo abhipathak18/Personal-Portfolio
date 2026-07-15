@@ -143,11 +143,13 @@
               <h3>AI Meeting Summarizer</h3>
               <p>
                 A team-built tool that transcribes and summarizes meetings
-                automatically. Audio is transcribed with Whisper, speakers
-                are separated with Pyannote.audio for diarization, and the
-                transcript is condensed into a clean summary using
-                GPT&#8209;4o / Gemini — served through a FastAPI backend to a
-                Flutter / React Native app.
+                automatically. Audio is transcribed with Whisper, and the
+                transcript is condensed into a summary and analysis using
+                LLaMA via the Groq API — served through a Flask backend
+                with MongoDB Atlas for storage and bcrypt for password
+                security, to a React (Vite) frontend that talks to the API
+                over Axios. Frontend is deployed on Vercel, backend on
+                Render.
               </p>
               <ul class="tech-list">
                 <li>Whisper</li><li>Pyannote.audio</li><li>GPT-4o</li><li>Gemini</li>
